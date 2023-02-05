@@ -1,10 +1,10 @@
 [tool.poetry]
 name = "bbpb"
-version = "1.0.0"
+version = "1.0.1"
 description = "Library for working with protobuf messages without a protobuf type definition."
 authors = ["Ryan Winkelmaier <ryan.winkelmaier@nccgroup.com>"]
 license = "MIT"
-repository = "https://github.com/nccgroup/blackboxprotobuf"
+repository = "https://github.com/mxrch/blackboxprotobuf"
 readme = "README.md"
 keywords = ["protobuf"]
 exclude = ["./tests"]
@@ -13,9 +13,8 @@ packages = [
 ]
 
 [tool.poetry.dependencies]
-python = "^2.7 || ^3.3"
-protobuf = [ { version = "^3", python = "^3" },
-             { version = "3.17.3", python = "^2.7" } ]
+python = "^3.3"
+protobuf = [{ version = "4.21.9", python = "^3" }]
 six = "^1.16"
 
 
